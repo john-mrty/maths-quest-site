@@ -223,6 +223,8 @@
     .split-panel h2{font-size:clamp(2.35rem,5vw,4rem);line-height:1;letter-spacing:-.045em;margin-bottom:1rem;text-wrap:balance}
     .split-panel p{color:var(--muted)}
     .split-panel p:last-child{margin-bottom:0}
+    .split-panel.has-screenshot{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(1.5rem,4vw,3rem)}
+    .section-screenshot{display:block;width:100%;height:auto;border-radius:20px;box-shadow:0 12px 30px rgba(36,24,73,.12)}
     .belief{
       padding:clamp(1.5rem,4vw,2.5rem);
       border-radius:26px;
@@ -232,9 +234,6 @@
       font-weight:850;
       line-height:1.3;
     }
-    .family{background:linear-gradient(145deg,rgba(217,246,235,.9),rgba(255,253,248,.92))}
-    .family-list{display:grid;gap:.8rem;margin:0;padding:0;list-style:none}
-    .family-list li{padding:1rem 1.1rem;border-radius:17px;background:rgba(255,255,255,.72);font-weight:760;box-shadow:0 5px 0 rgba(52,131,103,.09)}
     .trust{display:grid;grid-template-columns:minmax(0,1fr) minmax(16rem,28rem);gap:clamp(2rem,8vw,7rem);align-items:start}
     .trust h2{font-size:clamp(2.4rem,5.5vw,4.2rem);line-height:1;letter-spacing:-.045em;margin-bottom:1.2rem}
     .trust-copy>p{font-size:1.12rem;color:var(--muted)}
@@ -244,7 +243,7 @@
     .reveal{opacity:0;transform:translateY(16px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:none}
     :focus-visible{outline:4px solid rgba(118,85,232,.34);outline-offset:4px}
     @media (max-width:780px){
-      .section-head,.beat,.split-panel,.trust{grid-template-columns:1fr}.feature-grid{grid-template-columns:1fr}.feature-card{min-height:0}.feature-card:nth-child(n){transform:none}.feature-icon{margin-bottom:1.5rem}.video-card{border-radius:22px}.frame-note{align-items:center}.step{grid-template-columns:3.2rem 1fr}.music-stack{margin-top:.5rem}
+      .section-head,.beat,.split-panel,.split-panel.has-screenshot,.trust{grid-template-columns:1fr}.feature-grid{grid-template-columns:1fr}.feature-card{min-height:0}.feature-card:nth-child(n){transform:none}.feature-icon{margin-bottom:1.5rem}.video-card{border-radius:22px}.frame-note{align-items:center}.step{grid-template-columns:3.2rem 1fr}.music-stack{margin-top:.5rem}
     }
     @media (max-width:500px){.masthead{margin-bottom:3.5rem}.nav-link{display:none}.shell{padding-inline:1rem}.actions{align-items:stretch}.button{width:100%}.quiet-link{margin:auto}.frame-note{flex-direction:column;align-items:stretch;padding:1.1rem}.frame-note .button{width:100%;margin-top:.25rem}.video-transcript{padding-inline:1.1rem}}
     @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.button{transition:none}}
@@ -291,6 +290,57 @@
       </div>
     </div>
 
+    <section id="why-it-works" class="reveal">
+      <div class="section-head">
+        <h2>Confidence grows through understanding—not pressure.</h2>
+        <p>Children become more confident when they have time to think, useful help when they need it and another chance when something goes wrong.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-icon" aria-hidden="true">↻</div><h3>Mistakes are safe</h3><p>A wrong answer opens another route to understanding. Children can try a tip, see a visual model and work through a similar example.</p></article>
+        <article class="feature-card"><div class="feature-icon" aria-hidden="true">?</div><h3>Help builds independence</h3><p>Open Work it out for question tips, visual models and a canvas to sketch a solution. Support stays close while children work things out for themselves.</p></article>
+        <article class="feature-card"><div class="feature-icon" aria-hidden="true">∞</div><h3>Understanding comes before speed</h3><p>Clearer arithmetic models show how to combine parts, take away, build equal groups and share. A varied question mix keeps each quest fresh while children build understanding before faster recall.</p></article>
+      </div>
+    </section>
+
+    <section id="work-it-out" class="split-panel has-screenshot reveal">
+      <div>
+        <p class="eyebrow">Work it out</p>
+        <h2>Room to think. Space to draw.</h2>
+        <p>Open Work it out from a question to bring the question, helpful tips and a sketching canvas together. Draw a picture, group objects or jot down a calculation using a finger, pencil or mouse.</p>
+        <p>Reveal a tip, explore a visual model or work through a similar example at your own pace. Pencil and eraser tools make it easy to try an idea and change it.</p>
+      </div>
+      <img class="section-screenshot" src="assets/work-it-out.png" width="2048" height="1536" loading="lazy" alt="Work it out scratchpad showing tips and a visual model for 11 plus 7 alongside a handwritten solution on the drawing canvas.">
+    </section>
+
+    <section class="reveal">
+      <div class="section-head"><h2>Ready in three small steps.</h2><p>No account is needed to begin. Choose a learner and their topics, then start a quest. A grown-up can sign in later to save across devices.</p></div>
+      <div class="steps col">
+        <article class="step"><div><h3>Create a learner</h3><p>Choose a first name or nickname, class level and friendly character avatar.</p></div></article>
+        <article class="step"><div><h3>Choose what to practise</h3><p>Include the topics being covered at school and leave everything else for later.</p></div></article>
+        <article class="step"><div><h3>Pick today’s adventure</h3><p>Learn with extra support, practise a personal mix, try a challenge or build fluency through music in Beat Quest.</p></div></article>
+      </div>
+    </section>
+
+    <section class="split-panel has-screenshot reveal">
+      <div>
+        <p class="eyebrow">Personalisation</p>
+        <h2>Practice that responds without judging.</h2>
+        <p>Maths Quest notices which ideas are becoming secure and which ones could use another look. It revisits tricky topics gently, keeps familiar skills fresh and recognises answers completed with help as part of learning.</p>
+        <p>There are no leaderboards, public rankings or comparisons with other children.</p>
+      </div>
+      <img class="section-screenshot" src="assets/personalised-practice.png" width="2048" height="1536" loading="lazy" alt="An addition question in Maths Quest with answer choices, quest progress and the Work it out button.">
+    </section>
+
+    <section class="beat reveal" aria-labelledby="beat-title">
+      <div><p class="eyebrow">Beat Quest</p><h2 id="beat-title">Turn growing fluency into music.</h2><p>Begin by seeing the pattern. As accurate times-table streaks grow, the track adds drums, bass, chords and melody.</p><p>The music makes practice playful while the learning remains the point.</p></div>
+      <div class="music-stack" aria-label="Music layers unlocked through correct answers">
+        <div class="music-layer on"><span>🥁</span><strong>Drums</strong><span>1st streak</span></div>
+        <div class="music-layer on"><span>♩</span><strong>Bass</strong><span>Keep going</span></div>
+        <div class="music-layer"><span>♬</span><strong>Chords</strong><span>Building</span></div>
+        <div class="music-layer"><span>♪</span><strong>Melody</strong><span>Full track</span></div>
+      </div>
+    </section>
+
     <section id="curriculum" class="split-panel reveal">
       <div>
         <p class="eyebrow">Rooted in the Irish curriculum</p>
@@ -308,71 +358,6 @@
         </ul>
         <p class="fineprint">Maths Quest is an independently developed resource. These links provide curriculum context; they do not imply endorsement by the organisations listed.</p>
       </div>
-    </section>
-
-    <section id="why-it-works" class="reveal">
-      <div class="section-head">
-        <h2>Confidence grows through understanding—not pressure.</h2>
-        <p>Children become more confident when they have time to think, useful help when they need it and another chance when something goes wrong.</p>
-      </div>
-      <div class="feature-grid">
-        <article class="feature-card"><div class="feature-icon" aria-hidden="true">↻</div><h3>Mistakes are safe</h3><p>A wrong answer opens another route to understanding. Children can try a tip, see a visual model and work through a similar example.</p></article>
-        <article class="feature-card"><div class="feature-icon" aria-hidden="true">?</div><h3>Help builds independence</h3><p>Open Work it out for question tips, visual models and a canvas to sketch a solution. Support stays close while children work things out for themselves.</p></article>
-        <article class="feature-card"><div class="feature-icon" aria-hidden="true">∞</div><h3>Understanding comes before speed</h3><p>Clearer arithmetic models show how to combine parts, take away, build equal groups and share. A varied question mix keeps each quest fresh while children build understanding before faster recall.</p></article>
-      </div>
-    </section>
-
-    <section id="work-it-out" class="split-panel reveal">
-      <div>
-        <p class="eyebrow">Work it out</p>
-        <h2>Room to think. Space to draw.</h2>
-        <p>Open Work it out from a question to bring the question, helpful tips and a sketching canvas together. Draw a picture, group objects or jot down a calculation using a finger, pencil or mouse.</p>
-        <p>Reveal a tip, explore a visual model or work through a similar example at your own pace. Pencil and eraser tools make it easy to try an idea and change it.</p>
-      </div>
-      <div class="belief"><p>See the question.<br>Sketch your thinking.<br>Find your own way through.</p></div>
-    </section>
-
-    <section class="reveal">
-      <div class="section-head"><h2>Ready in three small steps.</h2><p>No account is needed to begin. Choose a learner and their topics, then start a quest. A grown-up can sign in later to save across devices.</p></div>
-      <div class="steps col">
-        <article class="step"><div><h3>Create a learner</h3><p>Choose a first name or nickname, class level and friendly character avatar.</p></div></article>
-        <article class="step"><div><h3>Choose what to practise</h3><p>Include the topics being covered at school and leave everything else for later.</p></div></article>
-        <article class="step"><div><h3>Pick today’s adventure</h3><p>Learn with extra support, practise a personal mix, try a challenge or build fluency through music in Beat Quest.</p></div></article>
-      </div>
-    </section>
-
-    <section class="split-panel reveal">
-      <div>
-        <p class="eyebrow">Personalisation</p>
-        <h2>Practice that responds without judging.</h2>
-        <p>Maths Quest notices which ideas are becoming secure and which ones could use another look. It revisits tricky topics gently, keeps familiar skills fresh and recognises answers completed with help as part of learning.</p>
-        <p>There are no leaderboards, public rankings or comparisons with other children.</p>
-      </div>
-      <div class="belief">Progress is personal. Help is part of learning.</div>
-    </section>
-
-    <section class="beat reveal" aria-labelledby="beat-title">
-      <div><p class="eyebrow">Beat Quest</p><h2 id="beat-title">Turn growing fluency into music.</h2><p>Begin by seeing the pattern. As accurate times-table streaks grow, the track adds drums, bass, chords and melody.</p><p>The music makes practice playful while the learning remains the point.</p></div>
-      <div class="music-stack" aria-label="Music layers unlocked through correct answers">
-        <div class="music-layer on"><span>🥁</span><strong>Drums</strong><span>1st streak</span></div>
-        <div class="music-layer on"><span>♩</span><strong>Bass</strong><span>Keep going</span></div>
-        <div class="music-layer"><span>♬</span><strong>Chords</strong><span>Building</span></div>
-        <div class="music-layer"><span>♪</span><strong>Melody</strong><span>Full track</span></div>
-      </div>
-    </section>
-
-    <section class="split-panel family reveal">
-      <div>
-        <p class="eyebrow">Designed for home</p>
-        <h2>Short quests with a clear ending.</h2>
-        <p>Maths Quest is made to fit into family life. Sessions are short, adjustable and easy to finish. Missing a day carries no penalty, and returning should always feel welcoming.</p>
-        <p>Sound, celebrations, topics and session length can all be adjusted by a grown-up.</p>
-      </div>
-      <ul class="family-list">
-        <li>Short, adjustable sessions</li>
-        <li>No penalty for missing a day</li>
-        <li>A clear and satisfying finish</li>
-      </ul>
     </section>
 
     <section id="saving" class="split-panel reveal">
@@ -397,14 +382,14 @@
       </ul>
     </section>
 
-    <section class="split-panel reveal">
+    <section class="split-panel has-screenshot reveal">
       <div>
         <p class="eyebrow">Why Maths Quest exists</p>
         <h2>Designed by a parent for life at home.</h2>
         <p>Maths Quest began with a simple question: could maths practice be playful and effective without creating more pressure?</p>
         <p>It brings together experience as a parent, educational designer and product designer, with equal care given to the learning and the experience.</p>
       </div>
-      <div class="belief">“I understand that a little better. I can do this.”</div>
+      <img class="section-screenshot" src="assets/learner-profiles.png" width="2146" height="1572" loading="lazy" alt="Maths Quest learner selection showing three personal profiles for first, third and sixth class.">
     </section>
 
     <section class="closing reveal">
