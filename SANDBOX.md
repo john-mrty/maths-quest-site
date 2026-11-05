@@ -7,10 +7,10 @@ This checkout is on `design/refined-showcase`, based on production commit `cb720
 From this directory, run:
 
 ```sh
-python3 -m http.server 8876
+python3 preview.py
 ```
 
-Open http://localhost:8876/. All fonts, styles and edited media are local assets. The play links intentionally open the existing live game. The existing social preview metadata is retained for this design review.
+Open http://127.0.0.1:8876/. The launcher keeps the server independent of the temporary shell session. Run it again after a computer restart. All fonts, styles and edited media are local assets. Videos have ordinary source URLs, with visible-only playback managed by JavaScript. The play links intentionally open the existing live game. The existing social preview metadata is retained for this design review.
 
 ## Design changes
 
