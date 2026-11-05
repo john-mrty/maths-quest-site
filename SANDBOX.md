@@ -1,6 +1,6 @@
 # Refined showcase design sandbox
 
-This checkout is on `design/refined-showcase`, based on production commit `cb720d2`. It has not been merged or deployed.
+The redesign was developed and reviewed on `design/refined-showcase`, based on production commit `cb720d2`. These notes preserve the local preview and verification workflow. The redesign was approved for merging on 5 November 2026.
 
 ## Preview
 
@@ -32,6 +32,6 @@ Open http://127.0.0.1:8876/. The launcher keeps the server independent of the te
 
 Physical iPhone/iPad Safari and OS-level reduced-motion behaviour still need device testing. The cropped recordings retain their original captured interface and pointer; they are not newly recorded footage of the current game.
 
-## Next step
+## Release
 
-Review this sandbox and request any refinements. Merge and publish only after approval.
+Approval to merge and publish was given after sandbox review and the scratchpad clipping fix. Further design experiments should use a separate branch and preview.
